@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 header {
@@ -11,6 +12,10 @@ header {
     color: white;
     padding: 1em 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header .container {
@@ -44,7 +49,7 @@ nav ul li a {
 }
 
 main {
-    padding: 20px;
+    padding: 100px 20px 20px 20px;
     max-width: 800px;
     margin: auto;
     background-color: white;
@@ -65,6 +70,12 @@ section h2 {
     padding-bottom: 10px;
 }
 
+section img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
 footer {
     background-color: #4CAF50;
     color: white;
@@ -74,6 +85,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 1000;
 }
 
 footer .container {
@@ -89,4 +101,34 @@ footer .social a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+}
+
+.bitcoin-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.bitcoin {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://path-to-your-bitcoin-image.png');
+    background-size: cover;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -50px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 100vh;
+        transform: rotate(360deg);
+    }
 }
