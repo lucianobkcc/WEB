@@ -7,7 +7,4 @@ document.addEventListener('DOMContentLoaded', function() {
         bitcoin.classList.add('bitcoin');
         bitcoin.style.left = Math.random() * 100 + 'vw';
         bitcoin.style.animationDuration = Math.random() * 3 + 2 + 's';
-        bitcoin.style.animationDelay = Math.random() * 5 + 's';
-        bitcoinContainer.appendChild(bitcoin);
-    }
-});
+        bitcoin.style.animationDelay = Math.random
