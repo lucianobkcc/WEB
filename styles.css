@@ -1,134 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    line-height: 1.6;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #d4af37; /* Dorado suave */
     overflow-x: hidden;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    padding: 100px 20px 20px 20px;
-    max-width: 800px;
-    margin: auto;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-main .container {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 10px;
-}
-
-section img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 1000;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-footer .social a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.bitcoin-rain {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 999;
+header, footer {
+    background-color: #333;
+    color: #d4af37;
 }
 
 .bitcoin {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-image: url('https://path-to-your-bitcoin-image.png');
+    background-image: url('bitcoin.png'); /* Imagen de Bitcoin */
     background-size: cover;
     animation: fall linear infinite;
-}
-
-@keyframes fall {
-    0% {
-        top: -50px;
-        transform: rotate(0deg);
-    }
-    100% {
-        top: 100vh;
-        transform: rotate(360deg);
-    }
 }
