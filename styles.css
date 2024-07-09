@@ -72,7 +72,7 @@ section h2 {
 }
 
 section img {
-    width: 100%;
+    width: 50%;
     border-radius: 8px;
     margin-bottom: 20px;
 }
@@ -103,8 +103,8 @@ footer .social a {
 }
 
 .rectangle {
-    width: 45%;
-    height: 200px;
+    width: 25%;
+    height: 100px;
     margin: 20px;
     display: inline-block;
     background-color: #4C8ED9; /* Azul */
